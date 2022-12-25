@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+//    "baseUrl": ".",
+    //esModuleInterop позволяет делать обычный импорт в вебпак а не require()
+    "esModuleInterop": true,
+    // Если либа не имеет default import то они создаются автомато и не надо юзать
+    //import * as React from 'react' можно писать как обычно
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
